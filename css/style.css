@@ -1,0 +1,514 @@
+@font-face {
+	font-family: 'TheFMRadio';
+	src: url("../fonts/icomoon.eot");
+	src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.svg#icomoon") format("svg"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+.wrapper {
+	max-width: 1170px;
+	display: table;
+	margin: auto;
+	padding: 50px 0;
+}
+
+.verse-main-content {
+	width: 50%;
+	float: left;
+	padding: 10px 20px;
+	border: 4px solid #ccc;
+	height: 500px;
+	border-right: 8px solid #ccc;
+	overflow-y: auto;
+	font-size: 16px;
+}
+
+.translated-verse {
+	width: 50%;
+	float: left;
+	padding: 10px 20px;
+	border: 4px solid #ccc;
+	border-left: 0;
+	height: 500px;
+	overflow-y: auto;
+	font-size: 16px;
+	line-height: 25px;
+}
+.verse-main-content h2 {
+	font-size: 1.5em;
+	margin-top: 10px;
+	border-bottom: 1px solid #F7F7F7;
+	padding-bottom: 6px;
+}
+.jp-state-no-volume .volume-control {
+	display: none;
+}
+
+/* player
+=======================================*/
+.dfm-radio button {
+	font-size: 1em;
+}
+.jp-controls button:focus, .jp-controls button:hover, .jp-controls button:active {
+	outline: none;
+	box-shadow: none;
+}
+.dfm-radio {
+	display: table;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+	left: 0;
+	right: 0;
+	background: #404040;
+	border-top: 1px solid rgba(255,255,255,.11);
+}
+.radio_player_image {
+	width: 464px;
+	margin: 0 auto;
+}
+
+div#jp_container_1 {
+	margin: 0px auto;
+	float: left;
+	width: 100%;
+}
+
+.left_image{
+	width: 50px;
+	height: 70px;
+	float: left;
+}
+.middel_image{
+	width: 367px;
+	height: 70px;
+	float: left;
+}
+.right_image{
+	width: 50px;
+	height: 70px;
+	float: left;
+	margin-left: -4px;
+}
+#dfmr-player li {
+	list-style: none !important;
+}
+#dfmr-player button {
+	text-decoration: none !important;
+	outline: none !important;
+	color: #FFF;
+	background: none;
+	margin-left: 0px;
+	border: none;
+	height: 0px;
+	float: left;
+	padding: 2px 6px;
+	margin: 0;
+	line-height: 22px;
+	box-shadow: none;
+	text-shadow: none;
+}
+#dfmr-player button:hover {
+	color: #ccc;
+}
+#dfmr-player {
+	margin: 0 auto;
+	/* min-height: 120px; */
+	position: relative;
+	font-family: "TheFMRadio";
+	clear: both;
+}
+#dfmr-player .dfmr-player-desc {
+	background: #3A3636;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+#dfmr-player .dfmr-title {
+	float: left;
+	color: #FFFFFF;
+	font-family: arial;
+	font-size: 1em;
+	text-transform: capitalize;
+	width: 100%;
+	font-weight: 700;
+}
+#dfmr-player .dfmr-thumb {
+	float: right;
+	overflow: hidden;
+	width: 62px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#dfmr-player .dfmr-thumb img{
+	width: 100%;
+	height: auto;
+}
+#dfmr-player .jp-type-single {
+	width: 90%;
+	margin: auto;
+	display: table;
+	padding-top: 2px;
+	position: relative;
+	background: #404040;
+	padding-bottom: 2px;
+}
+#dfmr-player .dfmr-player-control {
+	font-family: 'TheFMRadio';
+}
+#dfmr-player .dfmr-player-control .jp-play{
+	display: block;
+	float: left;
+	overflow: hidden;
+	outline: none;
+	height: 60px;
+	background: none;
+	border: none;
+	color: #fff;
+}
+#dfmr-player .dfmr-intro {
+	float: left;
+	padding-top: 10px;
+	width: 70%;
+	padding-bottom: 10px;
+}
+#dfmr-player .dfmr-cat {
+	float: left;
+	color: #BEBEBE;
+	width: 100%;
+}
+#dfmr-player .dfmr-cat a {
+	color: #BEBEBE;
+}
+#dfmr-player .dfmr-cat:before {
+	content: "\e60c";
+	color: #303030;
+	margin-right: 7px;
+	font-family: thefmradio;
+	font-size: 0.7em;
+	text-shadow: 0 0 1px #B8B8B8;
+}
+#dfmr-player .dfmr-volume-control {
+	padding-left: 20px;
+	width: 225px;
+}
+.dfmr-volume-control li {
+	display: inline-block;
+}
+#dfmr-player .jp-type-single .jp-controls {
+	font-size: 2em;
+	padding: 5px;
+	float: left;
+	padding-left: 20px;
+	position: relative;
+	width: 100px;
+	overflow: hidden;
+}
+#dfmr-player .dfmr-volume-control ul li{
+	display: inline;
+}
+#dfmr-player  .jp-play:before{
+	content: "\e603";
+	text-indent: 1px;
+	float: left;
+	display: block;
+	font-family: thefmradio;
+}
+.jp-state-playing .jp-play:before {
+	content: "\e60a" !important;
+	font-family: thefmradio;
+}
+#dfmr-player .jp-pause{
+	display: none;
+	height: 60px;
+}
+
+#dfmr-player  .jp-pause:before{
+	content: "\e60a";
+	display: block;
+	text-indent: 1px;
+	font-family: thefmradio;
+}
+.dfm-radio .jp-progress {
+	height: 10px;
+	width: 400px;
+	background: #E0DDDD;
+	position: relative;
+	z-index: 999;
+	overflow: hidden;
+	top: 24px;
+	left: 0;
+	margin-left: 80px;
+	float: left;
+}
+.dfm-radio .jp-seek-bar {
+	width: 0;
+	height: 10px;
+	cursor: pointer;
+}
+.dfm-radio .jp-play-bar {
+	background: #BF6262;
+	height: 10px;
+	cursor: pointer;
+}
+.dfmr-alert {
+	float: left;
+	color: #fff;
+	font-family: monospace;
+	min-width: 150px;
+	margin-top: 10px;
+}
+
+.volume-control {
+	height: 25px;
+	width: 210px;
+	right: 13px;
+	bottom: 20px;
+	position: absolute;
+	z-index: 5;
+	border: 1px solid transparent;
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	-moz-transition: height 1s ease-in-out;
+	-webkit-transition: height 1s ease-in-out;
+	-o-transition: height 1s ease-in-out;
+	-ms-transition: height 1s ease-in-out;
+	transition: height 1s ease-in-out;
+}
+
+.volume-control:hover .dfmr-volume-control{
+
+	
+}
+
+@-moz-keyframes spin {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+	};
+}
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	};
+}
+
+.dfmr-player-control #playing {
+	font-size: 12px;
+	margin-left: 1px;
+}
+
+#dfmr-player  .dfmr-player-control .jp-mute:before{
+	content: "\e605";
+	font-family: thefmradio;
+	position: absolute;
+	left: 10px;
+	color: #FFFFFF;
+	font-size: 15px;
+	text-shadow: none;
+}
+#dfmr-player  .dfmr-player-control .jp-unmute {
+	display: none;
+}
+#dfmr-player  .dfmr-player-control .jp-unmute:before{
+	content: "\e606";
+	font-family: thefmradio;
+	position: absolute;
+	left: 10px;
+	color: #FFFFFF;
+	font-size: 15px;
+	text-shadow: none;
+}
+#dfmr-player  .dfmr-player-control .jp-volume-max:before{
+	content: "\e604";
+	font-family: thefmradio;
+	position: absolute;
+	right: 11px;
+	z-index: 9999;
+	top: 1px;
+	font-size: 15px;
+}
+#dfmr-player  .dfmr-player-control .jp-volume-bar {
+	width: 65%;
+	height: 8px;
+	padding: 0;
+	overflow: hidden;
+	margin-left: 0px;
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #838383;
+	margin-right: 10px;
+	margin-top: 8px;
+	background: rgb(104, 104, 104);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+#dfmr-player  .dfmr-player-control .jp-volume-bar-value {
+	background-color: #BF6262;
+	height: 10px;
+	cursor: pointer;
+	border-right: 1px solid rgb(181, 181, 181);
+}
+#dfmr-player  .dfmr-increase-vol {
+	float: left;
+}
+
+.dfmr-head {
+	padding: 5px 10px;
+	background: rgb(76, 76, 76);
+	border-bottom: 1px solid #575757;
+	display: table;
+	width: 100%;
+}
+
+.dfmr-twitter {
+	width: 50px;
+	float: right;
+	margin-left: 5%;
+	margin-right: 1%;
+}
+.dfmr-facebook {
+	float: right;
+}
+.dfmr-player-control .jp-gui.jp-interface {
+	display: flex;
+}
+#dfmr-player  #pause, #dfmr-player  #waiting {
+	font-style: italic;
+	font-size: 12px;
+}
+#mediaplayer_wrapper, #mediaplayer {
+	overflow: hidden;
+	margin: 0 auto;
+}
+.muses-player {
+	margin: 0 auto;	
+	width: 463px;
+}
+.mob-msg {
+	display: none!important;
+}
+
+@media (max-width: 640px) {
+	.dfm-radio {
+		width: 100%;
+		/* min-height: 120px; */
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		float: left;
+		font-family: "TheFMRadio";
+		display: table;
+		z-index: 999;
+	}
+	.mob-msg {
+		background: #4E4E4E;
+		color: #fff;
+		border-top: 1px solid #615F5F;
+		padding-bottom: 4px;
+		font-size: 12px;
+	}
+
+}
+/*
+= responsive issue
+====================== */
+@media (min-width : 993px) and (max-width : 1200px) {
+	.dfm-radio .jp-progress {
+		width: 310px;
+		top: 24px;
+		margin-left: 30px;
+	}
+}
+@media (min-width : 768px) and (max-width : 992px) {
+	.dfm-radio .jp-progress {
+		width: 200px;
+	}
+	.volume-control {
+		display: none;
+	}
+}
+@media (min-width : 500px) and (max-width : 767px) {
+	#dfmr-player .dfmr-thumb {
+		width: 100%;
+		display: table-cell;
+	}
+	#dfmr-player .dfmr-intro {
+		float: left;
+		width: 75%;
+		padding: 10px;
+	}
+	#dfmr-player .dfmr-volume-control {
+		float: left;
+		margin-top: 17px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.dfmr-twitter {
+		width: 50px;
+		float: left;
+	}
+	.dfmr-facebook {
+		float: left;
+		margin-left: 10px;
+	}
+	.dfm-radio .jp-progress {
+		display: none;
+	}
+	.volume-control {
+		display: none;
+	}
+	#dfmr-player .dfmr-thumb {
+		width: 100%;
+		display: table-cell;
+	}
+	#dfmr-player .dfmr-intro {
+		float: left;
+		width: 75%;
+		padding: 10px;
+	}
+
+	#dfmr-player .dfmr-volume-control {
+		display: none;
+	}
+	.jp-type-single .jp-controls {
+		font-size: 3em;
+		float: left;
+		padding-left: 20px;
+		position: relative;
+		width: 15%;
+	}
+	.dfmr-twitter {
+		width: 50px;
+		float: left;
+	}
+	.dfmr-facebook {
+		float: left;
+		margin-left: 10px;
+	}
+	.mob-msg {
+		display: block!important;
+	}
+}
+@media (max-width : 400px) {
+
+	.volume-control {
+		display: none;
+	}
+	.dfm-radio .jp-progress {
+		display: none;
+	}
+
+}
